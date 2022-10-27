@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styling</title>
+    <style>
+body { 
+    /* nustatom fono spalva visam puslapiui */
+    /* ja paveldes puslapio vidiniai elementai, nebent mes ja jiems pakeisime */
+    background-color: darkgrey;
+    /* nustatom puslapio srifta */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* nustatom paveiksleli kaip fona visam puslapiui */
+    background-image: url("{{ url_for('static', filename='silver-gray-mist-background.jpg') }}");
+}
+h1, h2 { /*nurodom, kuriems objektams taikysim siuos stylingus; pvz abiems headingams  */
+    /* pridedam remeli, nustatom jo ploti pikseliais ir spalva */
+    border: 2px solid #000;
+    /* nustatom fono spalva remelyje */
+    background-color: #ffffff;
+    /* vidinis atitraukimas remelyje tarp teksto ir remelio per 1 reliatyvu elemneta (rem) */
+    padding: 1rem;
+    /* iscentruojam teksta */
+    text-align: center;
+    /* plotis puse ekrano, vw yra visas ekrano plotis */
+    width: 50vw;
+    /* isorinis remelis - 0 nuo virsaus ir apacios, auto is sono, kad iscentruoti */
+    margin: 0.5rem auto;
+}
+h2 {
+    /* nurodom stylinga tik antram headingui */
+    border-bottom-width: 5px;
+    box-shadow: rgb(68, 68, 68) 0.2rem 0.2rem;
+}
+.antras {
+    /* galim tam tikram paragrafui suteikti klase ir tuomet nurodyti stylinga tik tam paragrafui */
+    /* nurodom teksto spalva */
+    color: darkslategray;
+}
+
+.septyniasdesimt {
+    width: 70vw;
+}
+
+.right-box {
+    display: inline;
+    float: right;
+    width: 33%;
+    padding: 1rem;
+    border: 2px solid magenta;
+    background-color: black;
+    color: magenta;
+}
+
+.highlight {
+    background-color: aqua;
+}
+
+h1.highlight {
+    background-color: rgb(203, 222, 240);
+}
+
+img {
+    max-width: 20vw;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 5px solid #000;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="highlight">Hello, world</h1>
+    <!--  style perraso ansktesnius nurodytus parametrus  -->
+    <h2 class="antras septyniasdesimt" style="margin-bottom: 2rem;">Ferrars all spirits his imagine effects amongst neither</h2>
+    <img src="https://m.media-amazon.com/images/I/71IQE7kJPML._UL1500_.jpg">
+    <p style="color:rgb(90, 34, 34);">Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling he objection consisted. She although cheerful perceive screened throwing met not eat distance. Viewing hastily or written dearest elderly up weather it as. So direction so sweetness or extremity at daughters. Provided put unpacked now but bringing.</p>
+    <p class="antras">Piqued favour stairs it enable exeter as seeing. Remainder met improving but engrossed sincerity age. Better but length gay denied abroad are. Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.</p>
+    <p>Moments its musical age explain. But extremity sex now education concluded earnestly her continual. Oh furniture acuteness suspected continual ye something frankness. Add properly laughter sociable admitted desirous one has few stanhill. Opinion regular in perhaps another enjoyed no engaged he at. It conveying he continual ye suspected as necessary. Separate met packages shy for kindness.</p>
+    <p class="septyniasdesimt" style="text-align: center; margin-left: auto; margin-right: auto">Two exquisite objection delighted deficient yet its contained. Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him. Over many our good lady feet ask that. Expenses own moderate day fat trifling stronger sir domestic feelings. Itself at be answer always exeter up do. Though or my plenty uneasy do. Friendship so considered remarkably be to sentiments. Offered mention greater fifteen one promise because nor. Why denoting speaking fat indulged saw dwelling raillery.</p>
+    <p class="right-box">By an outlived insisted procured improved am. Paid hill fine ten now love even leaf. Supplied feelings mr of dissuade recurred no it offering honoured. Am of of in collecting devonshire favourable excellence. Her sixteen end ashamed cottage yet reached get hearing invited. Resources ourselves sweetness ye do no perfectly. Warmly warmth six one any wisdom. Family giving is pulled beauty chatty highly no. Blessing appetite domestic did mrs judgment rendered entirely. Highly indeed had garden not.</p>
+    <p>Did shy say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware. It ye greatest removing concerns an overcame appetite. Manner result square father boy behind its his. Their above spoke match ye mr right oh as first. Be my depending to believing perfectly concealed household. Point could to built no hours smile sense.</p>
+    <p class="highlight">Now seven world think timed while her. Spoil large oh he rooms on since an. Am up unwilling eagerness perceived incommode. Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as.</p>
+    <p>One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.</p>
+    <p>Next his only boy meet the fat rose when. Do repair at we misery wanted remove remain income. Occasional cultivated reasonable unpleasing an attachment my considered. Having ask and coming object seemed put did admire figure. Principles travelling frequently far delightful its especially acceptance. Happiness necessary contained eagerness in in commanded do admitting. Favourable continuing difficulty had her solicitude far. Nor doubt off widow all death aware offer. We will up able in both do sing.</p> 
+</body>
+</html>
