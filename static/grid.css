@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 0.25rem 0.5rem;
+}
+ /* budai dalinti stulpelius */
+.cont3 {
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    /* grid-template-columns: repeat(3, calc(100% / 3 - 0.5rem * 2 / 3)); */
+    /* grid-template-columns: calc(33.3% - 0.5rem * 2 / 3) calc(33.4% - 0.5rem * 2 / 3) calc(33.3% - 0.5rem * 2 / 3); */
+}
+.cont4 {
+    grid-template-columns: auto auto calc(45% - 0.5rem * 3 / 4) calc(15% - 0.5rem * 3 / 4);
+    /* grid-template-columns: calc(20% - 0.5rem * 3 / 4) calc(20% - 0.5rem * 3 / 4) calc(45% - 0.5rem * 3 / 4) calc(15% - 0.5rem * 3 / 4); */
+    /* grid-template-columns: auto auto auto auto; butu keturi po 25% bet auto tampo ir pagal turini*/
+    /* grid-template-columns: repeat(4, 1fr); butu keturi viedodi stulpeliai */
+}
+.item1 {
+    background-color: slategray;
+    padding: 1rem;
+}
+.item2 {
+    background-color: rgb(136, 145, 156);
+    padding: 1rem;
+}
+.item3 {
+    background-color: rgb(179, 188, 199);
+    padding: 1rem;
+}
+.col-double {
+    grid-column: span 2;
+}
+.row-double {
+    grid-row: span 2;
+}
+.meniu {
+    grid-column: span 3;
+}
+.footer {
+    grid-column: span 4;
+}
+.meniu {
+    background-color: slategray;
+}
