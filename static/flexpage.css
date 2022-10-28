@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(69, 68, 75);
+    position: fixed;
+    height: 4rem;
+    width: 100vw;
+}
+
+main {
+    background-image: url('/static/silver-gray-mist-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    flex-grow: 1;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 139, 139, 0.2);
+    width: 1200px;
+    max-width: 80vw;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.things {
+    background-color: rgba(119, 101, 183, 0.2);
+}
+
+.thing-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+
+}
+
+.thing h3 {
+    text-align: center;
+}
+
+.thing img {
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1, h2, p {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+footer {
+    min-height: 7rem;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
